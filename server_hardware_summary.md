@@ -47,11 +47,3 @@
 | Embedded LOM Port 2 | Ethernet | Enabled | 0000:02:00.1 |
 | Embedded Device | Video | Enabled | 0000:01:00.1 |
 
-## 6. GPU Compatibility Summary
-RTX 3090 **cannot** be installed in this server due to:
-- 1U chassis height
-- Insufficient PSU capacity
-- No GPU cooling
-- x8 electrical slot
-- No GPU power connectors
-
