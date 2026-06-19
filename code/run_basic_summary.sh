@@ -1,2 +1,45 @@
-{ echo "===== SYSTEM ====="; hostnamectl;  echo; echo "===== CPU ====="; lscpu;  echo; echo "===== MEMORY ====="; free -h; sudo dmidecode -t memory;  echo; echo "===== STORAGE ====="; lsblk -o NAME,MODEL,SIZE,TYPE,MOUNTPOINT;  echo; echo "===== FILESYSTEM ====="; df -h;  echo; echo "===== PCIe SLOTS ====="; sudo dmidecode -t slot;  echo; echo "===== GPU ====="; lspci | grep -iE "vga|3d|display";  echo; echo "===== NETWORK ====="; lspci | grep -i ethernet;  echo; echo "===== BIOS ====="; sudo
-	dmidecode -t bios;  echo; echo "===== CHASSIS ====="; sudo dmidecode -t chassis;  echo; echo "===== MOTHERBOARD ====="; sudo dmidecode -t baseboard; } > basic_report.txt
+{
+echo "===== SYSTEM ====="
+hostnamectl
+
+echo
+echo "===== CPU ====="
+lscpu
+
+echo
+echo "===== MEMORY ====="
+free -h
+sudo dmidecode -t memory
+
+echo
+echo "===== STORAGE ====="
+lsblk -o NAME,MODEL,SIZE,TYPE,MOUNTPOINT
+
+echo
+echo "===== FILESYSTEM ====="
+df -h
+
+echo
+echo "===== PCIe SLOTS ====="
+sudo dmidecode -t slot
+
+echo
+echo "===== GPU ====="
+lspci | grep -iE "vga|3d|display"
+
+echo
+echo "===== NETWORK ====="
+lspci | grep -i ethernet
+
+echo
+echo "===== BIOS ====="
+sudo dmidecode -t bios
+
+echo
+echo "===== CHASSIS ====="
+sudo dmidecode -t chassis
+
+echo
+echo "===== MOTHERBOARD ====="
+sudo dmidecode -t baseboard
+} > hardware_report.txt
