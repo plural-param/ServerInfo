@@ -10,4 +10,4 @@
 [Hardware Summary](https://github.com/plural-param/ServerInfo/blob/main/Server2-plural-app.iiit.ac.in/server_hardware_summary.md)
 
 ### URL
-[plural-app.iiit.ac.in](plural-app.iiit.ac.in)
+[plural-app.iiit.ac.in](https://plural-app.iiit.ac.in)
